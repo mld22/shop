@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+ width: 1140px;
+ margin: 0 auto;
+ outline: 1px solid red;
+}
+
+
+
+.header {
+    background-color: #222222;
+    color: #fff;
+    padding: 18px 0;
+    
+}
+
+.offer {
+    background-color: #F1E4E6;
+}
+
+.categories {
+    background-color: #fff;
+}
+
+.products {
+    background-color: #fff;
+}
+
+.advantages {
+    background-color: #222224;
+}
+
+.subscrine {
+    background-color: #fff;
+}
+
+.footer {
+    background-color: #222224;
+}
