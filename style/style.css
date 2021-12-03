@@ -96,6 +96,33 @@ display: flex;
 .categories {
     background-color: #fff;
 }
+.categories-line-1 {
+ display: flex;
+margin-bottom: 30px;
+justify-content: space-between;
+}
+
+.categories-foto-line-1 {
+    position: absolute;  
+}
+
+.categories-foto-toning-1 {
+    position: relative;
+}
+
+.categories-line-2 {
+position: absolute;
+}
+
+.categories-toning-line-2 {
+position: relative;
+}
+
+ .categories-wrap {
+height: 470px;
+margin-top: 65px;
+margin-bottom: 93px;
+ }
 
 .products {
     background-color: #fff;
@@ -140,9 +167,17 @@ color: rgba(251, 251, 251, 1);
 
 
 .subscrine {
-    background-color: #fff;
+    background-image: url(img/surfer.png), url(img/surfer-toning.svg);
 }
 
+
+.foto-surfer {
+position: absolute;
+}
+
+.foto-surfer-toning {
+position: relative;
+}
 .footer {
     background-color: #222224;
 }
