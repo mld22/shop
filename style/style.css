@@ -10,19 +10,89 @@
  outline: 1px solid red;
 }
 
+body {
+font-family: 'Lato', sans-serif;
+}
 
+button, input {
+    font-family: inherit;
+}
 
 .header {
     background-color: #222222;
     color: #fff;
     padding: 18px 0;
-    
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo-link {
+    margin-right: 40px;
+}
+
+.header-strips-link {
+    margin-right: 30px;
+}
+
+.header-humen-link {
+    margin-right: 30px;
 }
 
 .offer {
     background-color: #F1E4E6;
 }
 
+.offer-img-men {
+width: 800.58px;
+height: 764px;
+}
+
+.offer-wrap{
+    display: flex;
+}
+
+.offer-img-strip{
+    height: 92px;
+    width: 12px;
+    margin-right: 16px;
+}
+
+.offer-text {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.offer-heading {
+font-weight: 900;
+font-size: 48px;
+line-height: 58px;
+color: #222222;
+}
+
+.offer-depiction {
+font-weight: 700;
+font-size: 37px;
+line-height: 44,4px;
+}
+.offer-col-left {
+    display: flex;
+    margin-top: 264px;
+    height: 92px;
+}
+
+.offer-fashion-pink {
+    color: #F16D7F;
+    margin-left: 10px;
+}
+
+.offer-line-2{
+display: flex;
+}
 .categories {
     background-color: #fff;
 }
@@ -35,10 +105,61 @@
     background-color: #222224;
 }
 
+.advantages-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.advantages-col-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 102px 0;
+}
+.advantages-col-1, .advantages-col-2 {
+    margin-right: 90px;
+}
+
+.advantages-heading {
+font-size: 19.96px;
+line-height: 24px;
+text-align: center;
+color: #FBFBFB;
+margin-top: 25px;
+margin-bottom: 15px;
+}
+
+.advantages-depiction {
+font-weight: 300;
+font-size: 13.972px;
+line-height: 17px;
+text-align: center;
+color: rgba(251, 251, 251, 1);
+}
+
+
 .subscrine {
     background-color: #fff;
 }
 
 .footer {
     background-color: #222224;
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-col-1 {
+font-size: 16px;
+line-height: 19px;
+color: #FBFBFB;
+margin: 30px 0;
+}
+
+.footer-link-margin {
+    margin-left: 5px;
 }
