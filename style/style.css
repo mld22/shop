@@ -95,7 +95,7 @@ color: #222222;
 .offer-depiction {
 font-weight: 700;
 font-size: 37px;
-line-height: 44,4px;
+line-height: 44.4px;
 }
 .offer-col-left {
 display: flex;
@@ -157,13 +157,13 @@ height: 50px;
 color: #FFFFFF;
 font-size: 16px;
 font-weight: 400;
-line-height: 19,2px;
+line-height: 19.2px;
 }
 
 .categories-depiction{
 font-size: 24px;
 font-weight: 700;
-line-height: 28,8px;
+line-height: 28.8px;
 color: #F16D7F;
 }
 
@@ -352,11 +352,12 @@ padding-top: 97px;
 .subscrine-wrap {
 display: block;
 position: absolute;
+right: 0;
 }
 .subscrine-heading {
 font-weight: 700;
 font-size: 24px;
-line-height: 40,13px;
+line-height: 40.13px;
 text-align: center;
 color: rgba(34, 34, 36, 1)
 }
@@ -364,7 +365,7 @@ color: rgba(34, 34, 36, 1)
 .subscrine-depiction {
 font-weight: 400;
 font-size: 18px;
-line-height: 30,1px;
+line-height: 30.1px;
 text-align: center;
 color: rgba(34, 34, 36, 1);
 margin-bottom: 32px;
