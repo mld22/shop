@@ -66,9 +66,8 @@ height: 148px;
 
 .offer {
 background-color: #F1E4E6;
-outline: 1px solid #222222;
 display: flex;
-    align-items: center;
+align-items: center;
 }
 
 .offer-men {
@@ -78,20 +77,20 @@ height: 764px;
 left: 0;
 }
 .offer-wrap{
-    display: flex;
-    height: 764px;
+display: flex;
+height: 764px;
 }
 
 .offer-pink {
-    background-color: #F1E4E6;
-    display: flex;
-        align-items: center;
-        height: 148px;   
+background-color: #F1E4E6;
+display: flex;
+align-items: center;
+height: 148px;
 }
 
 .new-arrivals {
-    color: #F16D7F;
-    font-size: 24px;
+color: #F16D7F;
+font-size: 24px;
 line-height: 29px;
 font-weight: 400;
 }
@@ -140,8 +139,8 @@ margin: -1px;
 }
 
 .categories {
-    margin-top: 65px;
-    margin-bottom: 102px;
+margin-top: 65px;
+margin-bottom: 102px;
 }
 
 .categories-wrap {
@@ -153,10 +152,10 @@ flex-wrap: wrap;
 gap: 30px;
 }
 .categories-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
 }
 
 .categories-heading {
@@ -173,38 +172,37 @@ line-height: 28.8px;
 color: #F16D7F;
 }
 .categories-assambly {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #C4C4C4;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-    padding: 20px;
-    width: 360px;
-    height: 260px;
-    padding: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+background-color: #C4C4C4;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+box-sizing: border-box;
+padding: 20px;
+width: 360px;
+height: 260px;
+padding: 20px;
 }
 
-
 .categories-women {
-    background-image: url(../img/categories-women1.png);
+background-image: url(../img/categories-women1.png);
 }
 
 .categories-men {
-    background-image: url(../img/categories-men1.png);
+background-image: url(../img/categories-men1.png);
 }
 
 .categories-kids {
-    background-image: url(../img/categories-kids1.png);
+background-image: url(../img/categories-kids1.png);
 
 }
 .categories-accesories {
-    width: 1140px;
-    height: 180px;
-    background-image: url(../img/categories-accesories1.png);
+width: 1140px;
+height: 180px;
+background-image: url(../img/categories-accesories1.png);
 }
 
 .products {
@@ -329,21 +327,21 @@ background-size: contain;
 }
 
 .adv-ikon-car {
-    background-image: url(../img/ikon-car.png);
-    width: 45px;
-    height: 32px;
+background-image: url(../img/ikon-car.png);
+width: 45px;
+height: 32px;
 }
 
 .adv-ikon-sales {
-    background-image: url(../img/ikon-sales.png);
-    width: 40px;
-    height: 40px;
+background-image: url(../img/ikon-sales.png);
+width: 40px;
+height: 40px;
 }
 
 .adv-ikon-quality {
-    background-image: url(../img/ikon-diadem.png);
-    width: 47px;
-    height: 35px;
+background-image: url(../img/ikon-diadem.png);
+width: 47px;
+height: 35px;
 }
 
 .advantages-col-center{
@@ -356,19 +354,16 @@ margin-right: 90px;
 }
 
 .advantages-text{
-    width: 302px;
-    height: 67px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 22.75px;
+width: 302px;
+height: 67px;
+display: flex;
+flex-direction: column;
+margin-top: 22.75px;
 }
 
 .advantages-text-delivery {
-    margin-top: 17px;
+margin-top: 17px;
 }
-
-
-
 
 .advantages-heading {
 font-size: 19.96px;
@@ -466,8 +461,8 @@ align-items: center;
 }
 
 .depiction-button {
-    display: flex;
-    flex-direction: column;
+display: flex;
+flex-direction: column;
 }
 
 .search-bar {
