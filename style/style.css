@@ -59,6 +59,11 @@ margin-right: 30px;
 margin-right: 30px;
 }
 
+.pink-blok {
+background-color: #F8F3F4;
+height: 148px;
+}
+
 .offer {
 background-color: #F1E4E6;
 outline: 1px solid #222222;
@@ -73,16 +78,10 @@ height: 764px;
 display: flex;
 }
 
-.offer-img-strip{
-height: 92px;
-width: 12px;
-margin-right: 16px;
-}
 
 .offer-text {
-display: flex;
-justify-content: space-around;
-flex-direction: column;
+border-left: 12px solid #F16D7F;
+padding-left: 16px;
 }
 
 .offer-heading {
@@ -114,6 +113,15 @@ display: flex;
 .categories {
 background-color: #fff;
 }
+
+.hidden{
+width: 1px;
+height: 1px;
+position: absolute;
+left: -99999px;
+margin: -1px;
+}
+
 .categories-line-1 {
 display: flex;
 margin-bottom: 30px;
@@ -126,6 +134,24 @@ position: absolute;
 
 .categories-foto-toning-1 {
 position: relative;
+}
+
+.categories-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C4C4C4;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    width: 360px;
+    height: 260px;
+    padding: 20px;
+}
+
+.categories-item-women {
+    background-image: url(../img/categories-women.png);
 }
 
 .categories-line-2 {
@@ -290,6 +316,7 @@ outline: 1px solid #FF6A6A;
 
 .advantages {
 background-color: #222224;
+width: 100vh;
 }
 
 .advantages-wrap {
@@ -396,6 +423,11 @@ padding-top: 160px;
 
 .subscrine-reletive{
 display: flex;
+}
+
+.depiction-button {
+    display: flex;
+    flex-direction: column;
 }
 
 .search-bar {
