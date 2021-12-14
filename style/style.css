@@ -23,6 +23,10 @@ max-width: 1600px;
 margin: 0 auto;
 }
 
+.offer-conteiner {
+background-color: #F1E4E6;
+}
+
 body {
 font-family: 'Lato', sans-serif;
 }
@@ -65,16 +69,15 @@ height: 148px;
 }
 
 .offer {
-background-color: #F1E4E6;
 display: flex;
 align-items: center;
+justify-content: space-between;
 }
 
 .offer-men {
 background-image: url(../img/foto-offer-men.png);
-width: 800.58px;
-height: 764px;
-left: 0;
+background-repeat: no-repeat;
+width: 50%;
 }
 .offer-wrap{
 display: flex;
@@ -295,19 +298,20 @@ margin-right: 28.8px;
 
 .all-products {
 color: #FF6A6A;
-width: 212px;
-height: 48px;
-padding: 15px 38px 14px 38px;
 display: flex;
-align-items: center;
-position: relative;
+justify-content: center;
 }
 
 .background-button-products{
-position: absolute;
 width: 212px;
 height: 48px;
+border: none;
 outline: 1px solid #FF6A6A;
+background-color: #fff;
+}
+
+.link-catalog {
+text-decoration: none;
 }
 
 .advantages {
