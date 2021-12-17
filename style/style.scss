@@ -421,38 +421,46 @@ text-decoration: none;
 }
 
 
-.pagination {
-	display: flex;
-	justify-content: center;
-	padding: 20px 0;
+.pagination-catalog {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
 }
 
 .pagination-list {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	display: flex;
-	gap: 10px;	
-	border: 1px solid grey;
-	border-radius: 5px;
-	padding: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  border: 1px solid #EBEBEB;
+  border-radius: 5px;
+  padding: 10px;
+  
 }
 
-.pagination-item--separator {
-	margin: 0 -10px;
-	color: grey;
+.pagination-item--separator{
+margin: 0 -10px;
+color: gray;
+}
+.link-item {
+  @include button-none();
+  border: none;
 }
 
 .pagination-link {
-	color: #000;
+  color: #c2c2c2;
+  background-color: white;
+  @include button-none();
 }
-.pagination-link--active {
-	color: blue;
+
+.pagination-link--active{
+color: #F16D7F;
 }
 
 /*Приемущества */
 
-@import "block/advantages.scss";
+@import "blocks/_advantages.scss";
 
 /* Подписка */
 @import "blocks/_subscrine.scss";

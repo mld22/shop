@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/*Переменные */
+/*Примеси */
 * {
   margin: 0;
   padding: 0;
@@ -582,6 +584,52 @@ a {
   text-decoration: none;
 }
 
+.pagination-catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0;
+}
+
+.pagination-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  border: 1px solid #EBEBEB;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.pagination-item--separator {
+  margin: 0 -10px;
+  color: gray;
+}
+
+.link-item {
+  font-family: inherit;
+  border: none;
+  border: none;
+}
+
+.pagination-link {
+  color: #c2c2c2;
+  background-color: white;
+  font-family: inherit;
+  border: none;
+}
+
+.pagination-link--active {
+  color: #F16D7F;
+}
+
+/*Приемущества */
 .advantages {
   background-color: #222224;
   height: 343px;
