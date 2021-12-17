@@ -424,7 +424,7 @@ text-decoration: none;
 .pagination-catalog {
   display: flex;
   justify-content: center;
-  padding: 20px 0;
+  padding: 0;
 }
 
 .pagination-list {
@@ -432,11 +432,24 @@ text-decoration: none;
   padding: 0;
   list-style: none;
   display: flex;
-  gap: 10px;
+  gap: 21px;
   border: 1px solid #EBEBEB;
   border-radius: 5px;
   padding: 10px;
-  
+  align-items: center;
+}
+
+.pagination-link--center {
+display: flex;
+}
+
+.arrow-pagination {
+width: 7px;
+height: 14px;
+}
+
+.pagination-item {
+display: flex;
 }
 
 .pagination-item--separator{
@@ -457,6 +470,7 @@ color: gray;
 .pagination-link--active{
 color: #F16D7F;
 }
+
 
 /*Приемущества */
 
