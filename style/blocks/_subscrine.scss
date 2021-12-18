@@ -95,6 +95,15 @@ opacity: 0.67;
 font-size: 14px;
 line-height: 17px;
 border-width: 0;
+
+&:hover {
+border: 1px solid $pink-color;
+}
+
+&:focus {
+border: 1px solid #eb5a6d;
+}
+
 }
 
 .button-subscribe{

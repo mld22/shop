@@ -360,6 +360,11 @@ align-items: center;
 width: 360px;
 height: 581px;
 margin-bottom: 30px;
+
+&:hover {
+background-color: #ec697d0e;
+}
+
 }
 
 .product{
@@ -404,7 +409,7 @@ width: 45px;
 height: 47px;
 @include flex();
 @include button-none();
-padding: 8px 8px 8px 8px; 
+padding: 8px 8px 8px 8px;
 }
 
 .all-products {
@@ -422,7 +427,7 @@ background-color: $white-color;
 @include flex();
 
 &:hover {
-  background-color: #ef5b7118;
+background-color: #ef5b7118;
 }
 }
 
@@ -461,16 +466,16 @@ height: 14px;
 fill: #000000;
 
 &:hover{
-  fill: $pink-color;
+fill: $pink-color;
 }
 }
 
 .item-btn-left{
-  margin-right: 8px; 
+margin-right: 8px;
 }
 
 .item-btn-right {
-  margin-left: 8px;
+margin-left: 8px;
 }
 
 .pagination-item--separator{
@@ -504,13 +509,13 @@ margin-top: -50px;
 flex-direction: column;
 
 &-box {
-  border-bottom: 1px solid #EAEAEA;
-  width: 640px; 
-  height: 357px;
-  @include flex();
-  flex-direction: column;
-  margin-bottom: 66px;
-  margin-top: 63px;
+border-bottom: 1px solid #EAEAEA;
+width: 640px;
+height: 357px;
+@include flex();
+flex-direction: column;
+margin-bottom: 66px;
+margin-top: 63px;
 }
 
 &-strip {
@@ -519,7 +524,7 @@ margin-bottom: 16px;
 }
 
 &-heading {
-  font-weight: 300;
+font-weight: 300;
 font-size: 14px;
 line-height: 17px;
 color: $pink-color;
@@ -546,37 +551,35 @@ width: 555px;
 }
 
 &-price {
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 29px;
-  color: #EF5B70;
-  margin-bottom: 63px
+font-weight: 300;
+font-size: 24px;
+line-height: 29px;
+color: #EF5B70;
+margin-bottom: 63px
 }
 
-
 &-button {
-  margin-top: 51px;
-  margin-bottom: 65px;
+margin-top: 51px;
+margin-bottom: 65px;
 }
 
 &-all {
-  padding-top: 17px;
-  padding-bottom: 14px;
+padding-top: 17px;
+padding-bottom: 14px;
 margin-right: 54px;
 }
 
 &-svg-indent{
-  @include flex();
-  flex-direction: row;
+@include flex();
+flex-direction: row;
 }
 
 }
 
 .cart-ikon{
-  margin-right: 23px;
-  margin-left: 23px;
+margin-right: 23px;
+margin-left: 23px;
 }
-
 
 /*Приемущества */
 

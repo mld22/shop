@@ -501,6 +501,10 @@ a {
   margin-bottom: 30px;
 }
 
+.card-product:hover {
+  background-color: #ec697d0e;
+}
+
 .product {
   width: 360px;
   height: 420px;
@@ -1051,6 +1055,14 @@ a {
   font-size: 14px;
   line-height: 17px;
   border-width: 0;
+}
+
+.search-bar:hover {
+  border: 1px solid #F16D7F;
+}
+
+.search-bar:focus {
+  border: 1px solid #eb5a6d;
 }
 
 .button-subscribe {
