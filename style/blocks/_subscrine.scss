@@ -1,121 +1,120 @@
 .subscrine {
-    background-color: #C4C4C4;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-    
-    &-wrap {
-    display: block;
-    position: absolute;
-    right: 0;
-    }
-    
-    &-heading {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 40.13px;
-    text-align: center;
-    color: rgba(34, 34, 36, 1)
-    }
-    
-    &-depiction {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30.1px;
-    text-align: center;
-    color: rgba(34, 34, 36, 1);
-    margin-bottom: 32px;
-    }
-    
-    &-col-1 {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    }
-    
-    &-form {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    }
-    
-    &-col-2 {
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 154px;
-    width: 577px;
-    height: 142px;
-    padding-top: 160px;
-    }
-    
-    &-reletive{
-    display: flex;
-    align-items: center;
-    }
-    }
-    
-    .txt-reviews {
-    font-size: 20px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 24px;
-    color: rgba(34, 34, 36, 1);
-    margin-top: 30px;
-    text-align: center;
-    }
-    
-    .reviews {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    height: 255px;
-    width: 360px;
-    padding-top: 97px;
-    }
-    
-    .depiction-button {
-    display: flex;
-    flex-direction: column;
-    }
-    
-    .search-bar {
-    background-color: #E1E1E1;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    padding-right: 134px;
-    padding-left: 22px;
-    border-radius: 30px 0 0 30px;
-    color: #222224;
-    opacity: 0.67;
-    font-size: 14px;
-    line-height: 17px;
-    border-width: 0;
-    }
-    
-    .button-subscribe{
-    background-color: $pink-color;
-    padding: 18px 21px;
-    border-radius: 0 30px 30px 0;
-    color: #FFFFFF;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    @include button-none();
-    
-    &:hover{
-    background-color: #F16D7F + #e76a6a ;
-    color: $pink-color;
-    }
-    }
-    
-    .foto-surfer {
-    background-image: url(../img/foto-surfer1.png);
-    width: 100%;
-    height: 448px;
-    }
-    
+background-color: #C4C4C4;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+box-sizing: border-box;
+
+&-wrap {
+display: block;
+position: absolute;
+right: 0;
+}
+
+&-heading {
+font-weight: 700;
+font-size: 24px;
+line-height: 40.13px;
+text-align: center;
+color: rgba(34, 34, 36, 1)
+}
+
+&-depiction {
+font-weight: 400;
+font-size: 18px;
+line-height: 30.1px;
+text-align: center;
+color: rgba(34, 34, 36, 1);
+margin-bottom: 32px;
+}
+
+&-col-1 {
+width: 50%;
+display: flex;
+justify-content: center;
+}
+
+&-form {
+width: 50%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+&-col-2 {
+position: relative;
+display: flex;
+align-items: center;
+flex-direction: column;
+margin-bottom: 154px;
+width: 577px;
+height: 142px;
+padding-top: 160px;
+}
+
+&-reletive{
+display: flex;
+align-items: center;
+}
+}
+
+.txt-reviews {
+font-size: 20px;
+font-style: italic;
+font-weight: 400;
+line-height: 24px;
+color: rgba(34, 34, 36, 1);
+margin-top: 30px;
+text-align: center;
+}
+
+.reviews {
+display: flex;
+flex-direction: column;
+align-items: center;
+position: relative;
+height: 255px;
+width: 360px;
+padding-top: 97px;
+}
+
+.depiction-button {
+display: flex;
+flex-direction: column;
+}
+
+.search-bar {
+background-color: #E1E1E1;
+padding-top: 18px;
+padding-bottom: 18px;
+padding-right: 134px;
+padding-left: 22px;
+border-radius: 30px 0 0 30px;
+color: #222224;
+opacity: 0.67;
+font-size: 14px;
+line-height: 17px;
+border-width: 0;
+}
+
+.button-subscribe{
+background-color: $pink-color;
+padding: 18px 21px;
+border-radius: 0 30px 30px 0;
+color: #FFFFFF;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+@include button-none();
+
+&:hover{
+background-color: #F16D7F + #e76a6a ;
+color: $pink-color;
+}
+}
+
+.foto-surfer {
+background-image: url(../img/foto-surfer1.png);
+width: 100%;
+height: 448px;
+}

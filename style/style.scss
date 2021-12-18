@@ -6,8 +6,6 @@
 
 @import "_mixins.scss";
 
-
-
 * {
 margin: 0;
 padding: 0;
@@ -52,7 +50,7 @@ font-family: inherit;
 }
 
 a {
-  @include link-none();
+@include link-none();
 }
 
 /* Шапка */
@@ -174,7 +172,6 @@ text-decoration: underline;
 color: $pink-color;
 }
 
-
 .hidden{
 width: 1px;
 height: 1px;
@@ -189,7 +186,7 @@ margin-bottom: 102px;
 background-color: $white-color;
 
 &-wrap {
- @include list-none ();
+@include list-none ();
 list-style: none;
 display: flex;
 justify-content: space-between;
@@ -390,13 +387,24 @@ margin-right: 28.8px;
 }
 .item-catalog {
 background-color: #F7F7F7;
-display: flex;
-justify-content: center;
+@include flex();
+justify-content: space-between;
+border: 1px solid #EAEAEA;
+
 }
+
 .item-product {
 width: 597px;
 height: 727px;
+margin-bottom: 45px;
+}
 
+.item-btn{
+width: 45px;
+height: 47px;
+@include flex();
+@include button-none();
+padding: 8px 8px 8px 8px; 
 }
 
 .all-products {
@@ -411,32 +419,29 @@ height: 48px;
 @include button-none();
 outline: 1px solid #FF6A6A;
 background-color: $white-color;
-display: flex;
-align-items: center;
-justify-content: center;
+@include flex();
+
+&:hover {
+  background-color: #ef5b7118;
+}
 }
 
 .link-catalog {
 text-decoration: none;
 }
 
-
 .pagination-catalog {
-  display: flex;
-  justify-content: center;
-  padding: 0;
+@include flex();
+padding: 0;
 }
 
 .pagination-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  gap: 21px;
-  border: 1px solid #EBEBEB;
-  border-radius: 5px;
-  padding: 10px;
-  align-items: center;
+@include list-none();
+gap: 21px;
+border: 1px solid #EBEBEB;
+border-radius: 5px;
+padding: 10px;
+@include flex();
 }
 
 .pagination-link--center {
@@ -449,7 +454,23 @@ height: 14px;
 }
 
 .pagination-item {
-display: flex;
+@include flex();
+}
+
+.item-arrow{
+fill: #000000;
+
+&:hover{
+  fill: $pink-color;
+}
+}
+
+.item-btn-left{
+  margin-right: 8px; 
+}
+
+.item-btn-right {
+  margin-left: 8px;
 }
 
 .pagination-item--separator{
@@ -457,18 +478,103 @@ margin: 0 -10px;
 color: gray;
 }
 .link-item {
-  @include button-none();
-  border: none;
+@include button-none();
 }
 
 .pagination-link {
-  color: #c2c2c2;
-  background-color: white;
-  @include button-none();
+color: #c2c2c2;
+background-color: $white-color;
+@include button-none();
+
+&:hover{
+background-color: #f16d7f4d;
+}
 }
 
 .pagination-link--active{
-color: #F16D7F;
+color: $pink-color;
+}
+/*Описание продукта каталога*/
+.slider {
+height: 601px;
+background-color: $white-color;
+border: 1px solid #EAEAEA;
+margin-top: -50px;
+@include flex();
+flex-direction: column;
+
+&-box {
+  border-bottom: 1px solid #EAEAEA;
+  width: 640px; 
+  height: 357px;
+  @include flex();
+  flex-direction: column;
+  margin-bottom: 66px;
+  margin-top: 63px;
+}
+
+&-strip {
+margin-top: 13px;
+margin-bottom: 16px;
+}
+
+&-heading {
+  font-weight: 300;
+font-size: 14px;
+line-height: 17px;
+color: $pink-color;
+text-align: center;
+}
+
+&-description {
+font-weight: 300;
+font-size: 18px;
+line-height: 22px;
+color: #4D4D4D;
+text-align: center;
+}
+
+&-text{
+font-weight: 300;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+color: #5E5E5E;
+margin-top: 50px;
+margin-bottom: 40px;
+width: 555px;
+}
+
+&-price {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #EF5B70;
+  margin-bottom: 63px
+}
+
+
+&-button {
+  margin-top: 51px;
+  margin-bottom: 65px;
+}
+
+&-all {
+  padding-top: 17px;
+  padding-bottom: 14px;
+margin-right: 54px;
+}
+
+&-svg-indent{
+  @include flex();
+  flex-direction: row;
+}
+
+}
+
+.cart-ikon{
+  margin-right: 23px;
+  margin-left: 23px;
 }
 
 
