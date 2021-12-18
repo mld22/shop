@@ -95,13 +95,14 @@ opacity: 0.67;
 font-size: 14px;
 line-height: 17px;
 border-width: 0;
+outline: none;
 
 &:hover {
 border: 1px solid $pink-color;
 }
 
 &:focus {
-border: 1px solid #eb5a6d;
+border: 1px solid #2c1518;
 }
 
 }
