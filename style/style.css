@@ -502,7 +502,7 @@ a {
 }
 
 .card-product:hover {
-  background-color: #ec697d0e;
+  background-color: #ec697d18;
 }
 
 .product {
@@ -909,7 +909,7 @@ a {
   font-size: 19.96px;
   line-height: 24px;
   text-align: center;
-  color: #FBFBFB;
+  color: #fff;
   margin-top: 25px;
   margin-bottom: 15px;
 }
@@ -919,7 +919,7 @@ a {
   font-size: 13.972px;
   line-height: 17px;
   text-align: center;
-  color: #fbfbfb;
+  color: #fff;
 }
 
 /* Подписка */
@@ -1050,7 +1050,7 @@ a {
   padding-right: 134px;
   padding-left: 22px;
   border-radius: 30px 0 0 30px;
-  color: #222224;
+  color: #222222;
   opacity: 0.67;
   font-size: 14px;
   line-height: 17px;
@@ -1059,18 +1059,18 @@ a {
 }
 
 .search-bar:hover {
-  border: 1px solid #F16D7F;
+  outline: 1px solid #F16D7F;
 }
 
 .search-bar:focus {
-  border: 1px solid #2c1518;
+  outline: 1px solid #222224;
 }
 
 .button-subscribe {
   background-color: #F16D7F;
   padding: 18px 21px;
   border-radius: 0 30px 30px 0;
-  color: #FFFFFF;
+  color: #fff;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -1079,8 +1079,7 @@ a {
 }
 
 .button-subscribe:hover {
-  background-color: #ffd7e9;
-  color: #F16D7F;
+  background-color: #f16d7fe5;
 }
 
 .foto-surfer {
