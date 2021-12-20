@@ -1,11 +1,11 @@
 .header {
-background-color: #222222;
+background-color: $black1-color;
 color: $white-color;
 padding: 18px 0;
 }
 
 .header-search {
-fill: #E8E8E8;
+fill: $gray2-color;
 
 &:hover {
 fill: $pink-color;
@@ -13,7 +13,7 @@ fill: $pink-color;
 }
 
 .header-humen {
-fill: #E8E8E8;
+fill: $gray2-color;
 
 &:hover {
 fill: $pink-color;
@@ -21,7 +21,7 @@ fill: $pink-color;
 }
 
 .header-ikon-strips {
-fill: #E8E8E8;
+fill: $gray2-color;
 
 &:hover {
 fill: $pink-color;

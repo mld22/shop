@@ -362,7 +362,7 @@ height: 581px;
 margin-bottom: 30px;
 
 &:hover {
-background-color: #ec697d0e;
+background-color: #ec697d18;
 }
 
 }
@@ -413,7 +413,7 @@ padding: 8px 8px 8px 8px;
 }
 
 .all-products {
-color: #FF6A6A;
+color: $pink1-color;
 display: flex;
 justify-content: center;
 }
@@ -422,7 +422,7 @@ justify-content: center;
 width: 212px;
 height: 48px;
 @include button-none();
-outline: 1px solid #FF6A6A;
+outline: 1px solid $pink1-color;
 background-color: $white-color;
 @include flex();
 

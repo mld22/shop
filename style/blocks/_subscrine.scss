@@ -1,5 +1,5 @@
 .subscrine {
-background-color: #C4C4C4;
+background-color: $gray-color;
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
@@ -16,7 +16,7 @@ font-weight: 700;
 font-size: 24px;
 line-height: 40.13px;
 text-align: center;
-color: rgba(34, 34, 36, 1)
+color: $black-color;
 }
 
 &-depiction {
@@ -24,7 +24,7 @@ font-weight: 400;
 font-size: 18px;
 line-height: 30.1px;
 text-align: center;
-color: rgba(34, 34, 36, 1);
+color: $black-color;
 margin-bottom: 32px;
 }
 
@@ -63,7 +63,7 @@ font-size: 20px;
 font-style: italic;
 font-weight: 400;
 line-height: 24px;
-color: rgba(34, 34, 36, 1);
+color: $black-color;
 margin-top: 30px;
 text-align: center;
 }
@@ -84,13 +84,13 @@ flex-direction: column;
 }
 
 .search-bar {
-background-color: #E1E1E1;
+background-color: $gray1-color;
 padding-top: 18px;
 padding-bottom: 18px;
 padding-right: 134px;
 padding-left: 22px;
 border-radius: 30px 0 0 30px;
-color: #222224;
+color: $black1-color;
 opacity: 0.67;
 font-size: 14px;
 line-height: 17px;
@@ -98,11 +98,11 @@ border-width: 0;
 outline: none;
 
 &:hover {
-border: 1px solid $pink-color;
+outline: 1px solid $pink-color;
 }
 
 &:focus {
-border: 1px solid #2c1518;
+outline: 1px solid $black-color;
 }
 
 }
@@ -111,15 +111,14 @@ border: 1px solid #2c1518;
 background-color: $pink-color;
 padding: 18px 21px;
 border-radius: 0 30px 30px 0;
-color: #FFFFFF;
+color: $white-color;
 font-weight: 400;
 font-size: 14px;
 line-height: 17px;
 @include button-none();
 
 &:hover{
-background-color: #F16D7F + #e76a6a ;
-color: $pink-color;
+background-color: #f16d7fe5 ;
 }
 }
 

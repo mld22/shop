@@ -1,5 +1,5 @@
 .advantages {
-background-color: #222224;
+background-color: $black-color;
 height: 343px;
 padding: 105px 400px;
 
@@ -58,7 +58,7 @@ margin-top: 17px;
 font-size: 19.96px;
 line-height: 24px;
 text-align: center;
-color: #FBFBFB;
+color: $white-color;
 margin-top: 25px;
 margin-bottom: 15px;
 }
@@ -68,5 +68,5 @@ font-weight: 300;
 font-size: 13.972px;
 line-height: 17px;
 text-align: center;
-color: rgba(251, 251, 251, 1);
+color: $white-color;
 }
