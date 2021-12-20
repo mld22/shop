@@ -1,0 +1,593 @@
+/*Переменные */
+
+@import "blocks/_var.scss";
+
+/*Примеси */
+
+@import "_mixins.scss";
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.wrap {
+max-width: 1140px;
+margin: 0 auto;
+}
+
+.wrapper {
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+.top {
+flex-grow: 1;
+}
+
+.big-conteiner {
+max-width: 1600px;
+margin: 0 auto;
+}
+
+/*.offer-conteiner {
+background-color: #F1E4E6;
+}*/
+
+.video {
+width: 100%;
+height: 30%;
+}
+
+body {
+font-family: 'Lato', sans-serif;
+margin: 0;
+}
+
+button, input {
+font-family: inherit;
+}
+
+a {
+@include link-none();
+}
+
+/* Шапка */
+
+@import "blocks/_header.scss";
+
+.inner-title {
+background-color: #F8F3F4;
+height: 148px;
+display: flex;
+}
+
+.offer {
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+&-men {
+background-image: url(../img/foto-offer-men.png);
+background-repeat: no-repeat;
+width: 50%;
+}
+
+&-wrap{
+display: flex;
+height: 764px;
+background-position: center;
+background-size: cover;
+}
+
+&-text {
+border-left: 12px solid $pink-color;
+padding-left: 16px;
+}
+
+&-heading {
+font-weight: 900;
+font-size: 48px;
+line-height: 58px;
+color: #222222;
+}
+
+&-depiction {
+font-weight: 700;
+font-size: 37px;
+line-height: 44.4px;
+}
+
+&-col-left {
+display: flex;
+height: 92px;
+}
+
+&-fashion-pink {
+color: $pink-color;
+margin-left: 10px;
+}
+
+&-line-2{
+display: flex;
+}
+}
+
+.inner-title {
+background-color: #F1E4E6;
+display: flex;
+align-items: center;
+height: 148px;
+}
+
+.new-arrivals {
+color: $pink-color;
+font-size: 24px;
+line-height: 29px;
+font-weight: 400;
+}
+
+.wrap-inner {
+display: flex;
+align-items: center;
+width: 100%;
+justify-content: space-between;
+}
+
+.breadcrumbs-list {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+gap: 20px;
+}
+
+.breadcrumbs-item::before {
+content: '/';
+margin-right: 10px;
+}
+
+.breadcrumbs-item:first-child::before {
+display: none;
+}
+
+.breadcrumbs-link {
+text-decoration: none;
+text-transform: uppercase;
+font-weight: 300;
+font-size: 14px;
+line-height: 17px;
+color: #636363;
+transition: 0.2s;
+}
+
+.breadcrumbs-link--current {
+font-weight: bold;
+color: $pink-color;
+}
+
+.breadcrumbs-link[href]:hover {
+text-decoration: underline;
+color: $pink-color;
+}
+
+.hidden{
+width: 1px;
+height: 1px;
+position: absolute;
+left: -99999px;
+margin: -1px;
+}
+
+.categories {
+margin-top: 65px;
+margin-bottom: 102px;
+background-color: $white-color;
+
+&-wrap {
+@include list-none ();
+list-style: none;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+gap: 30px;
+}
+&-text {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+&-heading {
+color: #FFFFFF;
+font-size: 16px;
+font-weight: 400;
+line-height: 19.2px;
+}
+
+&-depiction{
+font-size: 24px;
+font-weight: 700;
+line-height: 28.8px;
+color: $pink-color;
+}
+
+&-assambly {
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+background-color: #C4C4C4;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+box-sizing: border-box;
+padding: 20px;
+width: 360px;
+height: 260px;
+padding: 20px;
+}
+}
+
+.categories-women {
+background-image: url(../img/categories-women1.png);
+}
+
+.categories-men {
+background-image: url(../img/categories-men1.png);
+}
+
+.categories-kids {
+background-image: url(../img/categories-kids1.png);
+
+}
+.categories-accesories {
+width: 1140px;
+height: 180px;
+background-image: url(../img/categories-accesories1.png);
+}
+
+.products {
+background-color: $white-color;
+}
+
+.filter {
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+color: #000000;
+padding-left: 20px;
+
+&:hover {
+color: $pink-color;
+}
+}
+.filter-col-rigth {
+display: flex;
+align-items: center;
+}
+
+.ikon-filter {
+fill:rgba(0, 0, 0, 1);
+margin-left: 10px;
+
+&:hover {
+fill: $pink-color;
+}
+}
+
+.sort {
+display: flex;
+align-items: baseline;
+
+&-filter {
+font-size: 14px;
+line-height: 17px;
+color: #6F6E6E;
+margin-left: 23px;
+margin-right: 11px;
+}
+}
+
+.box-filter {
+display: flex;
+width: 60%;
+justify-content: space-between;
+}
+
+.introduction {
+display: flex;
+flex-direction: column;
+align-items: center;
+
+&-heading {
+font-weight: 400;
+font-size: 30px;
+line-height: 36px;
+color: #222222;
+margin-bottom: 6px;
+}
+
+&-depiction {
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: #9F9F9F;
+}
+}
+.product-filtration{
+width: 100%;
+padding-top: 49px;
+}
+
+.card-heading {
+font-weight: 400;
+font-size: 13px;
+line-height: 16px;
+color: #000000;
+margin-bottom: 12.65px;
+}
+
+.card-depiction {
+font-weight: 300;
+font-size: 14px;
+line-height: 17px;
+color: #5D5D5D;
+margin-bottom: 18px;
+}
+
+.price-product {
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: $pink-color;
+}
+
+.products-catalog {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 114px;
+}
+
+.card-product {
+background-color: #F8F8F8;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 360px;
+height: 581px;
+margin-bottom: 30px;
+
+&:hover {
+background-color: #ec697d0e;
+}
+
+}
+
+.product{
+width: 360px;
+height: 420px;
+}
+
+.products-cards {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+margin-bottom: 48px;
+margin-top: 47px;
+width: 100%;
+}
+
+.text-product {
+display: flex;
+justify-content: flex-start;
+flex-direction: column;
+margin-top: 25.35px;
+margin-bottom: 20px;
+margin-left: 16px;
+margin-right: 28.8px;
+}
+.item-catalog {
+background-color: #F7F7F7;
+@include flex();
+justify-content: space-between;
+border: 1px solid #EAEAEA;
+
+}
+
+.item-product {
+width: 597px;
+height: 727px;
+margin-bottom: 45px;
+}
+
+.item-btn{
+width: 45px;
+height: 47px;
+@include flex();
+@include button-none();
+padding: 8px 8px 8px 8px;
+}
+
+.all-products {
+color: #FF6A6A;
+display: flex;
+justify-content: center;
+}
+
+.background-button-products{
+width: 212px;
+height: 48px;
+@include button-none();
+outline: 1px solid #FF6A6A;
+background-color: $white-color;
+@include flex();
+
+&:hover {
+background-color: #ef5b7118;
+}
+}
+
+.link-catalog {
+text-decoration: none;
+}
+
+.pagination-catalog {
+@include flex();
+padding: 0;
+}
+
+.pagination-list {
+@include list-none();
+gap: 21px;
+border: 1px solid #EBEBEB;
+border-radius: 5px;
+padding: 10px;
+@include flex();
+}
+
+.pagination-link--center {
+display: flex;
+}
+
+.arrow-pagination {
+width: 7px;
+height: 14px;
+}
+
+.pagination-item {
+@include flex();
+}
+
+.item-arrow{
+fill: #000000;
+
+&:hover{
+fill: $pink-color;
+}
+}
+
+.item-btn-left{
+margin-right: 8px;
+}
+
+.item-btn-right {
+margin-left: 8px;
+}
+
+.pagination-item--separator{
+margin: 0 -10px;
+color: gray;
+}
+.link-item {
+@include button-none();
+}
+
+.pagination-link {
+color: #c2c2c2;
+background-color: $white-color;
+@include button-none();
+
+&:hover{
+background-color: #f16d7f4d;
+}
+}
+
+.pagination-link--active{
+color: $pink-color;
+}
+/*Описание продукта каталога*/
+.slider {
+height: 601px;
+background-color: $white-color;
+border: 1px solid #EAEAEA;
+margin-top: -50px;
+@include flex();
+flex-direction: column;
+
+&-box {
+border-bottom: 1px solid #EAEAEA;
+width: 640px;
+height: 357px;
+@include flex();
+flex-direction: column;
+margin-bottom: 66px;
+margin-top: 63px;
+}
+
+&-strip {
+margin-top: 13px;
+margin-bottom: 16px;
+}
+
+&-heading {
+font-weight: 300;
+font-size: 14px;
+line-height: 17px;
+color: $pink-color;
+text-align: center;
+}
+
+&-description {
+font-weight: 300;
+font-size: 18px;
+line-height: 22px;
+color: #4D4D4D;
+text-align: center;
+}
+
+&-text{
+font-weight: 300;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+color: #5E5E5E;
+margin-top: 50px;
+margin-bottom: 40px;
+width: 555px;
+}
+
+&-price {
+font-weight: 300;
+font-size: 24px;
+line-height: 29px;
+color: #EF5B70;
+margin-bottom: 63px
+}
+
+&-button {
+margin-top: 51px;
+margin-bottom: 65px;
+}
+
+&-all {
+padding-top: 17px;
+padding-bottom: 14px;
+margin-right: 54px;
+}
+
+&-svg-indent{
+@include flex();
+flex-direction: row;
+}
+
+}
+
+.cart-ikon{
+margin-right: 23px;
+margin-left: 23px;
+}
+
+/*Приемущества */
+
+@import "blocks/_advantages.scss";
+
+/* Подписка */
+@import "blocks/_subscrine.scss";
+
+/* Подвал*/
+
+@import "blocks/_footer.scss";

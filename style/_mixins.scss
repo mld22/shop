@@ -1,0 +1,21 @@
+@mixin list-none(){
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+@mixin link-none() {
+color: inherit;
+text-decoration: none;
+}
+
+@mixin button-none() {
+font-family: inherit;
+border: none;
+}
+
+@mixin flex() {
+display: flex;
+align-items: center;
+justify-content: center;
+}

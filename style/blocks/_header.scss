@@ -1,0 +1,47 @@
+.header {
+background-color: #222222;
+color: $white-color;
+padding: 18px 0;
+}
+
+.header-search {
+fill: #E8E8E8;
+
+&:hover {
+fill: $pink-color;
+}
+}
+
+.header-humen {
+fill: #E8E8E8;
+
+&:hover {
+fill: $pink-color;
+}
+}
+
+.header-ikon-strips {
+fill: #E8E8E8;
+
+&:hover {
+fill: $pink-color;
+}
+}
+
+.header-wrap {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.header-logo-link {
+margin-right: 40px;
+}
+
+.header-strips-link {
+margin-right: 30px;
+}
+
+.header-humen-link {
+margin-right: 30px;
+}
