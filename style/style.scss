@@ -365,7 +365,6 @@ margin-bottom: 30px;
 @include transition();
 position: relative;
 
-
 &:hover {
 background-color: #dfdfdf48;
 transform: scale(1.02);
@@ -410,7 +409,6 @@ margin-bottom: 48px;
 margin-top: 47px;
 width: 100%;
 }
-
 
 .btn-add {
 font-family: inherit;
@@ -670,7 +668,7 @@ opacity: 0;
 transform: rotateX(0);
 opacity: 1;
 }
-  }
+}
 .cart-ikon{
 margin-right: 23px;
 margin-left: 23px;
