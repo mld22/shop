@@ -363,12 +363,37 @@ width: 360px;
 height: 581px;
 margin-bottom: 30px;
 @include transition();
+position: relative;
 
 &:hover {
 background-color: #dfdfdf48;
 transform: scale(1.02);
 }
 
+&:hover .products-overlay {
+/* display: flex; */
+opacity: 1;
+transform: scaleY(1);
+}
+
+}
+
+.products-overlay{
+background-color: rgba(58, 56, 56, 0.86);
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+height: 420px;
+
+display: flex;
+/* display: none; */
+justify-content: center;
+align-items: center;
+opacity: 0;
+transform: scale(0);
+transition: opacity 0.3s ease-out, transform 0.4s ease-out;
+transform-origin: center top;
 }
 
 .product{
@@ -383,6 +408,27 @@ justify-content: space-between;
 margin-bottom: 48px;
 margin-top: 47px;
 width: 100%;
+}
+
+
+.btn-add {
+font-family: inherit;
+border: 1px solid $white-color;
+background-color: transparent;
+color: $white-color;
+font-size: 14px;
+line-height: 17px;
+
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 10px 15px 8px 12px;
+cursor: pointer;
+@include transition();
+
+&:hover {
+transform: scale(1.05);
+}
 }
 
 .text-product {
@@ -429,6 +475,7 @@ background-color: $white-color;
 @include flex();
 transition-duration: 0.1s;
 cursor: pointer;
+font-family: inherit;
 
 color: $pink1-color;
 display: flex;

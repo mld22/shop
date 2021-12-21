@@ -527,12 +527,48 @@ a {
   margin-bottom: 30px;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
+  position: relative;
 }
 
 .card-product:hover {
   background-color: #dfdfdf48;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+}
+
+.card-product:hover .products-overlay {
+  /* display: flex; */
+  opacity: 1;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.products-overlay {
+  background-color: rgba(58, 56, 56, 0.86);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* display: none; */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: opacity 0.3s ease-out, -webkit-transform 0.4s ease-out;
+  transition: opacity 0.3s ease-out, -webkit-transform 0.4s ease-out;
+  transition: opacity 0.3s ease-out, transform 0.4s ease-out;
+  transition: opacity 0.3s ease-out, transform 0.4s ease-out, -webkit-transform 0.4s ease-out;
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
 }
 
 .product {
@@ -552,6 +588,31 @@ a {
   margin-bottom: 48px;
   margin-top: 47px;
   width: 100%;
+}
+
+.btn-add {
+  font-family: inherit;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 14px;
+  line-height: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding: 10px 15px 8px 12px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.btn-add:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .text-product {
@@ -633,6 +694,7 @@ a {
   -webkit-transition-duration: 0.1s;
           transition-duration: 0.1s;
   cursor: pointer;
+  font-family: inherit;
   color: #FF6A6A;
   display: flex;
   justify-content: center;
