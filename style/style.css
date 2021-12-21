@@ -994,6 +994,60 @@ a {
 .registration {
   margin-top: 62px;
   margin-bottom: 82px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.loyalty {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.loyalty-heading {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #222222;
+  margin-bottom: 22px;
+}
+
+.loyalty-description {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #222222;
+  margin-bottom: 22px;
+}
+
+.loyalty-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.loyalty-list-item {
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #222222;
+  margin-bottom: 50px;
+}
+
+.check-mark {
+  margin-right: 25px;
 }
 
 /*Приемущества */

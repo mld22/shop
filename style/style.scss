@@ -680,8 +680,51 @@ fill: #EF5B70;
 .registration {
 margin-top: 62px;
 margin-bottom: 82px;
+display: flex;
+justify-content: space-between;
 }
 
+.loyalty {
+background-color: $white-color;
+display: flex;
+flex-direction: column;
+align-content: flex-start;
+
+&-heading {
+font-weight: 300;
+font-size: 24px;
+line-height: 29px;
+color: $black1-color;
+margin-bottom: 22px;
+}
+
+&-description {
+font-weight: 300;
+font-size: 24px;
+line-height: 29px;
+color: $black1-color;
+margin-bottom: 22px;
+}
+
+&-list {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+&-list-item {
+font-family: inherit;
+font-weight: 300;
+font-size: 24px;
+line-height: 29px;
+color: $black1-color;
+margin-bottom: 50px;
+}
+}
+
+.check-mark {
+margin-right: 25px;
+}
 /*Приемущества */
 
 @import "blocks/_advantages.scss";
