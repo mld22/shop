@@ -539,8 +539,8 @@ a {
 .card-product:hover .products-overlay {
   /* display: flex; */
   opacity: 1;
-  -webkit-transform: scaleY(1);
-          transform: scaleY(1);
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .products-overlay {
@@ -864,6 +864,8 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-animation: flip-in-hor-bottom 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: flip-in-hor-bottom 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .slider-box {
@@ -956,10 +958,42 @@ a {
           justify-content: flex-start;
 }
 
+@-webkit-keyframes flip-in-hor-bottom {
+  0% {
+    -webkit-transform: rotateX(80deg);
+            transform: rotateX(80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes flip-in-hor-bottom {
+  0% {
+    -webkit-transform: rotateX(80deg);
+            transform: rotateX(80deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    opacity: 1;
+  }
+}
+
 .cart-ikon {
   margin-right: 23px;
   margin-left: 23px;
   fill: #EF5B70;
+}
+
+/* Страница регистрации */
+.registration {
+  margin-top: 62px;
+  margin-bottom: 82px;
 }
 
 /*Приемущества */
