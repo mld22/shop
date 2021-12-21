@@ -259,6 +259,7 @@ font-size: 14px;
 line-height: 17px;
 color: #000000;
 padding-left: 20px;
+@include transition();
 
 &:hover {
 color: $pink-color;
@@ -272,6 +273,7 @@ align-items: center;
 .ikon-filter {
 fill:rgba(0, 0, 0, 1);
 margin-left: 10px;
+@include transition();
 
 &:hover {
 fill: $pink-color;
@@ -360,9 +362,11 @@ align-items: center;
 width: 360px;
 height: 581px;
 margin-bottom: 30px;
+@include transition();
 
 &:hover {
-background-color: #ec697d18;
+background-color: #dfdfdf48;
+transform: scale(1.02);
 }
 
 }
@@ -407,15 +411,34 @@ margin-bottom: 45px;
 .item-btn{
 width: 45px;
 height: 47px;
+padding: 8px 8px 8px 8px;
 @include flex();
 @include button-none();
-padding: 8px 8px 8px 8px;
 }
 
 .all-products {
 color: $pink1-color;
 display: flex;
 justify-content: center;
+
+width: 212px;
+height: 48px;
+@include button-none();
+outline: 1px solid $pink1-color;
+background-color: $white-color;
+@include flex();
+transition-duration: 0.1s;
+cursor: pointer;
+
+color: $pink1-color;
+display: flex;
+justify-content: center;
+font-size: 16px;
+line-height: 19px;
+
+&:hover{
+transform: scale(1.02);
+}
 }
 
 .background-button-products{
@@ -425,10 +448,19 @@ height: 48px;
 outline: 1px solid $pink1-color;
 background-color: $white-color;
 @include flex();
+@include transition();
+
+color: $pink1-color;
+display: flex;
+justify-content: center;
+font-size: 16px;
+line-height: 19px;
 
 &:hover {
-background-color: #ef5b7118;
+background-color: $pink-color;
+color: $white-color;
 }
+
 }
 
 .link-catalog {
@@ -464,6 +496,8 @@ height: 14px;
 
 .item-arrow{
 fill: #000000;
+@include transition();
+cursor: pointer;
 
 &:hover{
 fill: $pink-color;
@@ -490,9 +524,12 @@ color: gray;
 color: #c2c2c2;
 background-color: $white-color;
 @include button-none();
+@include transition();
 
 &:hover{
-background-color: #f16d7f4d;
+background-color: #bbbbbb3f;
+transform: scale(1.06);
+color: #9e9e9e;
 }
 }
 
@@ -566,12 +603,12 @@ margin-bottom: 65px;
 &-all {
 padding-top: 17px;
 padding-bottom: 14px;
-margin-right: 54px;
 }
 
 &-svg-indent{
 @include flex();
 flex-direction: row;
+justify-content: flex-start;
 }
 
 }
@@ -579,6 +616,7 @@ flex-direction: row;
 .cart-ikon{
 margin-right: 23px;
 margin-left: 23px;
+fill: #EF5B70;
 }
 
 /*Приемущества */

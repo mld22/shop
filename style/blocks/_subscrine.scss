@@ -96,6 +96,7 @@ font-size: 14px;
 line-height: 17px;
 border-width: 0;
 outline: none;
+@include transition();
 
 &:hover {
 outline: 1px solid $pink-color;
@@ -116,9 +117,10 @@ font-weight: 400;
 font-size: 14px;
 line-height: 17px;
 @include button-none();
+@include transition();
 
 &:hover{
-background-color: #f16d7fe5 ;
+background-color: #E05C6E ;
 }
 }
 
