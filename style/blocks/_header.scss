@@ -6,26 +6,40 @@ padding: 18px 0;
 
 .header-search {
 fill: $gray2-color;
+transition-duration: 0.7s;
 
 &:hover {
 fill: $pink-color;
+transform: scale(1.02);
 }
 }
 
 .header-humen {
 fill: $gray2-color;
+@include transition();
 
 &:hover {
 fill: $pink-color;
+transform: scale(1.02);
 }
 }
 
 .header-ikon-strips {
 fill: $gray2-color;
+@include transition();
 
 &:hover {
 fill: $pink-color;
+transform: scale(1.02);
 }
+}
+
+.header-logo {
+    transition-duration: 0.7s;
+
+    &:hover {
+        transform: rotateY(360deg);
+    }
 }
 
 .header-wrap {

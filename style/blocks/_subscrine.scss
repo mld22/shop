@@ -96,6 +96,7 @@ font-size: 14px;
 line-height: 17px;
 border-width: 0;
 outline: none;
+@include transition();
 
 &:hover {
 outline: 1px solid $pink-color;
@@ -105,6 +106,10 @@ outline: 1px solid $pink-color;
 outline: 1px solid $black-color;
 }
 
+&-button {
+display: flex;
+justify-content: space-evenly;
+}
 }
 
 .button-subscribe{
@@ -116,9 +121,10 @@ font-weight: 400;
 font-size: 14px;
 line-height: 17px;
 @include button-none();
+@include transition();
 
 &:hover{
-background-color: #f16d7fe5 ;
+background-color: #E05C6E ;
 }
 }
 
@@ -127,3 +133,4 @@ background-image: url(../img/foto-surfer1.png);
 width: 100%;
 height: 448px;
 }
+

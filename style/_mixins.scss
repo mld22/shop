@@ -19,3 +19,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
+
+@mixin transition() {
+transition-duration: 0.4s;
+}
