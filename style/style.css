@@ -1020,17 +1020,17 @@ a {
 }
 
 .loyalty-heading {
-  font-weight: 700;
+  font-weight: 300;
   font-size: 24px;
-  line-height: 40.13px;
+  line-height: 29px;
   color: #222222;
   margin-bottom: 22px;
 }
 
 .loyalty-description {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30.1px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
   color: #222222;
   margin-bottom: 22px;
 }
@@ -1084,11 +1084,12 @@ a {
           flex-direction: column;
   -ms-flex-line-pack: start;
       align-content: flex-start;
+  border: none;
 }
 
 .form-button {
   padding: 18px 23px;
-  background-color: pink;
+  background-color: #F16D7F;
   border: none;
   border-radius: 0 20px 20px 0;
   color: #fff;
@@ -1113,8 +1114,6 @@ a {
 }
 
 .form-input:hover {
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
   color: #F16D7F;
 }
 
@@ -1190,6 +1189,8 @@ a {
 
 .button-join:hover {
   background-color: #E05C6E;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 .arrow-join {
