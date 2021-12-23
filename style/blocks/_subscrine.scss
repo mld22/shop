@@ -106,6 +106,10 @@ outline: 1px solid $pink-color;
 outline: 1px solid $black-color;
 }
 
+&-button {
+display: flex;
+justify-content: space-evenly;
+}
 }
 
 .button-subscribe{

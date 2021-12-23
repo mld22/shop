@@ -231,6 +231,9 @@ padding: 20px;
 }
 }
 
+.categories-link {
+    padding: 100px 100px;
+}
 .categories-women {
 background-image: url(../img/categories-women1.png);
 }
@@ -691,17 +694,17 @@ flex-direction: column;
 align-content: flex-start;
 
 &-heading {
-font-weight: 300;
+font-weight: 700;
 font-size: 24px;
-line-height: 29px;
+line-height: 40.13px;
 color: $black1-color;
 margin-bottom: 22px;
 }
 
 &-description {
-font-weight: 300;
-font-size: 24px;
-line-height: 29px;
+font-weight: 400;
+font-size: 18px;
+line-height: 30.1px;
 color: $black1-color;
 margin-bottom: 22px;
 }

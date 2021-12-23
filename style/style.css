@@ -357,6 +357,10 @@ a {
   padding: 20px;
 }
 
+.categories-link {
+  padding: 100px 100px;
+}
+
 .categories-women {
   background-image: url(../img/categories-women1.png);
 }
@@ -1016,17 +1020,17 @@ a {
 }
 
 .loyalty-heading {
-  font-weight: 300;
+  font-weight: 700;
   font-size: 24px;
-  line-height: 29px;
+  line-height: 40.13px;
   color: #222222;
   margin-bottom: 22px;
 }
 
 .loyalty-description {
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 29px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30.1px;
   color: #222222;
   margin-bottom: 22px;
 }
@@ -1374,6 +1378,15 @@ a {
 
 .search-bar:focus {
   outline: 1px solid #222224;
+}
+
+.search-bar-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .button-subscribe {
