@@ -681,7 +681,7 @@ fill: #EF5B70;
 margin-top: 62px;
 margin-bottom: 82px;
 display: flex;
-justify-content: space-around;
+justify-content: space-between;
 }
 
 .loyalty {
@@ -725,6 +725,59 @@ margin-bottom: 50px;
 .check-mark {
 margin-right: 25px;
 }
+
+
+/* Форма*/
+.regform{
+    width: 35%;
+}
+.form {
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+
+}
+
+.form-field {
+	padding: 18px 23px;
+	background-color: grey;
+	border: none;
+	border-radius: 20px 0 0 20px;
+	color: #222;
+}
+.form-field:hover {
+	background-color: lightgrey;
+}
+.form-field::placeholder {
+	color: #222224;
+	font-size: 12px;
+}
+
+.form-button {
+	padding: 18px 23px;
+	background-color: pink;
+	border: none;
+	border-radius:  0 20px 20px 0;
+	color: #fff;
+}
+.form-button:hover {
+	background-color: pink;
+}
+
+.regform {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+.form-line {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+
+
 /*Приемущества */
 
 @import "blocks/_advantages.scss";
