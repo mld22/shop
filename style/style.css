@@ -243,12 +243,13 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
+  gap: 5px;
 }
 
 .breadcrumbs-item::before {
   content: '/';
-  margin-right: 10px;
+  color: #636363;
+  margin-right: 5px;
 }
 
 .breadcrumbs-item:first-child::before {
@@ -1382,9 +1383,9 @@ a {
   font-style: italic;
   font-weight: 400;
   line-height: 24px;
-  color: #222224;
   margin-top: 30px;
   text-align: center;
+  color: #222224;
 }
 
 .reviews {
@@ -1529,5 +1530,25 @@ a {
 .footer-link:hover {
   background-color: #F16D7F;
   color: #fff;
+}
+
+/* Tablet */
+@media (max-width: 1180px) {
+  .wrap {
+    width: 735px;
+  }
+  .big-conteiner {
+    max-width: 1180px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .wrap {
+    width: 360px;
+  }
+  .big-conteiner {
+    max-width: 767px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
