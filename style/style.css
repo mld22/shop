@@ -1203,7 +1203,7 @@ a {
 .advantages {
   background-color: #222224;
   height: 343px;
-  padding: 105px 400px;
+  padding-top: 105px;
 }
 
 .advantages-wrap {
@@ -1533,22 +1533,28 @@ a {
 }
 
 /* Tablet */
-@media (max-width: 1180px) {
-  .wrap {
+/* @media (max-width: 1180px){
+.wrap {
     width: 735px;
-  }
-  .big-conteiner {
+}
+
+.big-conteiner {
     max-width: 1180px;
-  }
+    }
+
+
 }
 
 /* Mobile */
+/*
 @media (max-width: 767px) {
-  .wrap {
+    .wrap {
     width: 360px;
-  }
-  .big-conteiner {
-    max-width: 767px;
-  }
-}
+    }
+    
+    .big-conteiner {
+        max-width: 767px;
+        }
+    
+    } */
 /*# sourceMappingURL=style.css.map */
