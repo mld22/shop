@@ -295,8 +295,6 @@ color: rgba(241, 109, 127, 1);
 margin-top: 16px;
 }
 
-
-
 .filter-drop-width {
 width: 360px;
 padding-right: 16px;
@@ -323,17 +321,17 @@ details[open] summary {
 color: rgba(241, 109, 127, 1);
 fill: rgba(241, 109, 127, 1);
 padding-left: 15px;
+width: 360px;
+filter: drop-shadow(4px 0px 4px rgba(0, 0, 0, 0.25));
 }
 
-
-
 details[open] .filter-drop {
-box-shadow: 0.4em 0.4em 0.4em 10px rgba(122,122,122,0.1);
+filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 details[open] summary svg {
-    fill: rgba(241, 109, 127, 1);
-    }
+fill: rgba(241, 109, 127, 1);
+}
 
 .filter-list {
 font-weight: 400;
@@ -342,6 +340,15 @@ line-height: 17px;
 color: #6F6E6E;
 padding-left: 15px;
 padding-bottom: 16px;
+@include transition();
+
+&:active{
+color: rgba(241, 109, 127, 1);
+}
+
+&:hover {
+transform: scale(1.01);
+}
 }
 
 .sort {
@@ -357,12 +364,64 @@ margin-right: 11px;
 }
 }
 
+.size-drop-box {
+position: relative;
+}
+
+.size-drop-title {
+background-color: $white-color;
+cursor: pointer;
+}
+
+.size-drop-content {
+position: absolute;
+background-color: $white-color;
+transform: scaleX(0);
+transform-origin: left top;
+transition: transform 0.5s ease;
+width: 79px;
+padding-top: 9px;
+padding-left: 9px;
+padding-bottom: 2px;
+}
+
+.size-drop-box:hover .size-drop-content{
+transform: scaleX(1);
+z-index: 1;
+animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes shadow-drop-center {
+0% {
+box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+}
+100% {
+box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+}
+}
+
+.size-block-item input {
+margin-right: 9px;
+
+width: 13px;
+height: 13px;
+border: 1px solid #6F6E6E;
+
+}
 .box-filter {
 display: flex;
 width: 60%;
 justify-content: space-between;
 }
 
+.size-block-item{
+display: block;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+color: #6F6E6E;
+margin-bottom: 10px;
+}
 .introduction {
 display: flex;
 flex-direction: column;
@@ -387,7 +446,6 @@ color: #9F9F9F;
 width: 100%;
 padding-top: 49px;
 }
-
 
 .card-heading {
 font-weight: 400;

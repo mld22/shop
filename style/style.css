@@ -78,8 +78,8 @@ a {
 
 .header-humen {
   fill: #E8E8E8;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .header-humen:hover {
@@ -90,8 +90,8 @@ a {
 
 .header-ikon-strips {
   fill: #E8E8E8;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .header-ikon-strips:hover {
@@ -389,8 +389,8 @@ a {
   font-size: 14px;
   line-height: 17px;
   color: #000000;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .filter-col-rigth {
@@ -407,8 +407,8 @@ a {
 .ikon-filter {
   fill: black;
   margin-left: 10px;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .filter-drop-heading {
@@ -456,11 +456,14 @@ details[open] summary {
   color: #f16d7f;
   fill: #f16d7f;
   padding-left: 15px;
+  width: 360px;
+  -webkit-filter: drop-shadow(4px 0px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(4px 0px 4px rgba(0, 0, 0, 0.25));
 }
 
 details[open] .filter-drop {
-  -webkit-box-shadow: 0.4em 0.4em 0.4em 10px rgba(122, 122, 122, 0.1);
-          box-shadow: 0.4em 0.4em 0.4em 10px rgba(122, 122, 122, 0.1);
+  -webkit-filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 details[open] summary svg {
@@ -474,6 +477,17 @@ details[open] summary svg {
   color: #6F6E6E;
   padding-left: 15px;
   padding-bottom: 16px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.filter-list:active {
+  color: #f16d7f;
+}
+
+.filter-list:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 .sort {
@@ -493,6 +507,69 @@ details[open] summary svg {
   margin-right: 11px;
 }
 
+.size-drop-box {
+  position: relative;
+}
+
+.size-drop-title {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.size-drop-content {
+  position: absolute;
+  background-color: #fff;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  width: 79px;
+  padding-top: 9px;
+  padding-left: 9px;
+  padding-bottom: 2px;
+}
+
+.size-drop-box:hover .size-drop-content {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  z-index: 1;
+  -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+          animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes shadow-drop-center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+
+@keyframes shadow-drop-center {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+  }
+}
+
+.size-block-item input {
+  margin-right: 9px;
+  width: 13px;
+  height: 13px;
+  border: 1px solid #6F6E6E;
+}
+
 .box-filter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -501,6 +578,15 @@ details[open] summary svg {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.size-block-item {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6F6E6E;
+  margin-bottom: 10px;
 }
 
 .introduction {
@@ -588,8 +674,8 @@ details[open] summary svg {
   width: 360px;
   height: 581px;
   margin-bottom: 30px;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
   position: relative;
 }
 
@@ -669,8 +755,8 @@ details[open] summary svg {
   gap: 10px;
   padding: 10px 15px 8px 12px;
   cursor: pointer;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .btn-add:hover {
@@ -786,8 +872,8 @@ details[open] summary svg {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
   color: #FF6A6A;
   display: flex;
   justify-content: center;
@@ -861,8 +947,8 @@ details[open] summary svg {
 
 .item-arrow {
   fill: #000000;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
   cursor: pointer;
 }
 
@@ -893,8 +979,8 @@ details[open] summary svg {
   background-color: #fff;
   font-family: inherit;
   border: none;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .pagination-link:hover {
@@ -1164,8 +1250,8 @@ details[open] summary svg {
   padding-left: 16px;
   padding-bottom: 13px;
   margin-top: 20px;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .form-input:focus {
@@ -1224,8 +1310,8 @@ details[open] summary svg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
   gap: 10px;
 }
 
@@ -1242,8 +1328,8 @@ details[open] summary svg {
   border: none;
   padding: 19px 28px 19px 28px;
   cursor: pointer;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .button-join:hover {
@@ -1486,8 +1572,8 @@ details[open] summary svg {
   line-height: 17px;
   border-width: 0;
   outline: none;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .search-bar:hover {
@@ -1517,8 +1603,8 @@ details[open] summary svg {
   line-height: 17px;
   font-family: inherit;
   border: none;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .button-subscribe:hover {
@@ -1581,8 +1667,8 @@ details[open] summary svg {
   text-decoration: none;
   color: #000;
   font-size: 18px;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .footer-link:hover {
