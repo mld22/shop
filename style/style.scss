@@ -262,28 +262,19 @@ font-weight: 600;
 font-size: 14px;
 line-height: 17px;
 color: #000000;
-
 @include transition();
-
-&:hover {
-color: $pink-color;
-}
 }
 .filter-col-rigth {
 display: flex;
 align-items: center;
-padding-left: 20px;
+padding-left: 0;
+background-color: $white-color;
 }
 
 .ikon-filter {
 fill:rgba(0, 0, 0, 1);
 margin-left: 10px;
 @include transition();
-
-&:hover {
-fill: $pink-color;
-}
-
 }
 
 .filter-drop-heading {
@@ -309,14 +300,20 @@ margin-top: 16px;
 .filter-drop-width {
 width: 360px;
 padding-right: 16px;
-padding-left: 16px;
+z-index: 1;
+background-color: $white-color;
 }
 details {
 position: relative;
-border: 1px solid red;
+
 }
 .filter-drop {
-    position: absolute; }
+position: absolute;
+width: 360px;
+background-color: $white-color;
+padding-left: 16px;
+}
+
 summary {
 display: block;
 cursor: pointer;
@@ -325,7 +322,18 @@ cursor: pointer;
 details[open] summary {
 color: rgba(241, 109, 127, 1);
 fill: rgba(241, 109, 127, 1);
+padding-left: 15px;
 }
+
+
+
+details[open] .filter-drop {
+box-shadow: 0.4em 0.4em 0.4em 10px rgba(122,122,122,0.1);
+}
+
+details[open] summary svg {
+    fill: rgba(241, 109, 127, 1);
+    }
 
 .filter-list {
 font-weight: 400;
@@ -379,6 +387,7 @@ color: #9F9F9F;
 width: 100%;
 padding-top: 49px;
 }
+
 
 .card-heading {
 font-weight: 400;

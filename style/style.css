@@ -393,10 +393,6 @@ a {
           transition-duration: 0.4s;
 }
 
-.filter:hover {
-  color: #F16D7F;
-}
-
 .filter-col-rigth {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -404,7 +400,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 20px;
+  padding-left: 0;
+  background-color: #fff;
 }
 
 .ikon-filter {
@@ -412,10 +409,6 @@ a {
   margin-left: 10px;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
-}
-
-.ikon-filter:hover {
-  fill: #F16D7F;
 }
 
 .filter-drop-heading {
@@ -439,16 +432,19 @@ a {
 .filter-drop-width {
   width: 360px;
   padding-right: 16px;
-  padding-left: 16px;
+  z-index: 1;
+  background-color: #fff;
 }
 
 details {
   position: relative;
-  border: 1px solid red;
 }
 
 .filter-drop {
   position: absolute;
+  width: 360px;
+  background-color: #fff;
+  padding-left: 16px;
 }
 
 summary {
@@ -458,6 +454,16 @@ summary {
 
 details[open] summary {
   color: #f16d7f;
+  fill: #f16d7f;
+  padding-left: 15px;
+}
+
+details[open] .filter-drop {
+  -webkit-box-shadow: 0.4em 0.4em 0.4em 10px rgba(122, 122, 122, 0.1);
+          box-shadow: 0.4em 0.4em 0.4em 10px rgba(122, 122, 122, 0.1);
+}
+
+details[open] summary svg {
   fill: #f16d7f;
 }
 
