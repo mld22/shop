@@ -1,7 +1,7 @@
 .advantages {
 background-color: $black-color;
 height: 343px;
-padding: 105px 400px;
+padding-top: 105px;
 
 &-wrap {
 @include list-none();
@@ -19,18 +19,21 @@ background-size: contain;
 background-image: url(../img/ikon-car.png);
 width: 45px;
 height: 32px;
+background-repeat: no-repeat;
 }
 
 .adv-ikon-sales {
 background-image: url(../img/ikon-sales.png);
 width: 40px;
 height: 40px;
+background-repeat: no-repeat;
 }
 
 .adv-ikon-quality {
 background-image: url(../img/ikon-diadem.png);
 width: 47px;
 height: 35px;
+background-repeat: no-repeat;
 }
 
 .advantages-col-center{

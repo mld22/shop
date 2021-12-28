@@ -35,11 +35,11 @@ transform: scale(1.02);
 }
 
 .header-logo {
-    transition-duration: 0.7s;
+transition-duration: 0.7s;
 
-    &:hover {
-        transform: rotateY(360deg);
-    }
+&:hover {
+transform: rotateY(360deg);
+}
 }
 
 .header-wrap {
@@ -53,9 +53,82 @@ margin-right: 40px;
 }
 
 .header-strips-link {
-margin-right: 30px;
+margin-right: 23px;
 }
 
 .header-humen-link {
 margin-right: 30px;
+}
+.header-col-2 {
+display: flex;
+align-items: flex-end;
+}
+
+.header-drop-box {
+position: relative;
+}
+
+.cross {
+display: flex;
+justify-content: flex-end;
+}
+
+.header-drop-content {
+background-color: $white-color;
+position: absolute;
+transform: scaleX(0);
+transform-origin: left top;
+transition: transform 0.5s ease;
+width: 232px;
+height: 764px;
+padding: 16px 17px 157px 32px;
+margin-top: 23px;
+margin-left: 125px;
+}
+
+.header-drop-box:hover .header-drop-content{
+transform: scaleX(1);
+z-index: 1;
+animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes shadow-drop-center {
+    0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+    }
+
+.menu-text {
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+color: #000000;
+text-align: left;
+margin-bottom: 12px;
+}
+
+.header-menu-heading {
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: #F16D7F;
+margin-top: 10px;
+margin-bottom: 17px;
+}
+
+.header-menu-item {
+margin-bottom: 15px;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+color: #6F6E6E;
+padding-left: 21px;
+@include transition();
+
+&:hover {
+color: #F16D7F;
+}
 }
