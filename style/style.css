@@ -1784,7 +1784,61 @@ details[open] summary svg {
     width: 735px;
   }
   .big-conteiner {
-    max-width: 1180px;
+    max-width: 1302px;
+  }
+  .categories-assambly {
+    width: 232.44px;
+    height: 167.62px;
+  }
+  .categories-accesories {
+    width: 734.94px;
+    height: 116.09px;
+  }
+  .categories-wrap {
+    gap: 18px;
+  }
+  .advantages {
+    padding: 0 64px 64px 65px;
+    height: 610px;
+  }
+  .adv-ikon-car {
+    width: 45px;
+    margin-top: 48px;
+  }
+  .adv-ikon-sales {
+    width: 40px;
+    margin-top: 49px;
+  }
+  .adv-ikon-quality {
+    width: 47px;
+    margin-top: 48px;
+  }
+  .advantages-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 90px;
+  }
+  .advantages-text {
+    margin-top: 25px;
+  }
+  .advantages-heading {
+    margin-bottom: 17px;
+  }
+  .foto-surfer {
+    height: 693px;
+  }
+  .subscrine-reletive {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .subscrine-col-2 {
+    padding-top: 85px;
   }
 }
 
