@@ -976,9 +976,17 @@ fill: $white-color;
 
 @import "blocks/_footer.scss";
 
+
+@media (max-width: 1558px){
+    .header-drop-content{
+     margin-left: 0px;
+     
+    }
+}
+
 /* Tablet */
 
- @media (max-width: 1180px){
+ @media (max-width: 1302px){
 .wrap {
 width: 735px;
 }
