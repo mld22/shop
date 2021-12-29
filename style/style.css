@@ -1857,21 +1857,18 @@ details[open] summary svg {
   .products-cards {
     margin-bottom: 14px;
   }
-  .search-bar {
-    padding: 17px 47px 17px 21px;
-  }
-  .button-subscribe {
-    padding: 18px;
+  .categories-link {
+    padding: 50px 50px;
   }
 }
 
 /* Mobile */
-@media (max-width: 767px) {
+@media (max-width: 781px) {
   .wrap {
     width: 360px;
   }
   .big-conteiner {
-    max-width: 767px;
+    max-width: 375px;
   }
   .filter {
     font-size: 0px;
@@ -1908,7 +1905,7 @@ details[open] summary svg {
     display: none;
   }
   .header-strips-link {
-    margin-right: 0px;
+    margin-right: 10px;
   }
   .adv-ikon-car {
     width: 45px;
@@ -1932,6 +1929,11 @@ details[open] summary svg {
   .categories-assambly {
     width: 343px;
     height: 247px;
+  }
+  .categories-wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .filter-drop {
     padding-top: 30px;

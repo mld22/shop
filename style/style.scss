@@ -1067,25 +1067,21 @@ display: none;
 .products-cards {
 margin-bottom: 14px;
 }
+.categories-link {
+    padding: 50px 50px;
+    }
 
-.search-bar{
-    padding: 17px 47px 17px 21px;
-    }
-    
-    .button-subscribe{
-    padding: 18px;
-    }
 }
 
 /* Mobile */
 
-@media (max-width: 767px) {
+@media (max-width: 781px) {
 .wrap {
 width: 360px;
 }
 
 .big-conteiner {
-max-width: 767px;
+max-width: 375px;
 }
 
 .filter {
@@ -1129,7 +1125,7 @@ display: none;
 }
 
 .header-strips-link {
-margin-right: 0px;
+margin-right: 10px;
 }
 
 .adv-ikon-car {
@@ -1156,6 +1152,12 @@ gap: 32px;
 width: 343px;
 height: 247px;
 }
+
+.categories-wrap {
+ justify-content: center;
+}
+
+
 
 .filter-drop {
 padding-top: 30px;
