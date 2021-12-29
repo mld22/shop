@@ -1851,6 +1851,12 @@ details[open] summary svg {
   .box-filter {
     width: 100%;
   }
+  .card-none {
+    display: none;
+  }
+  .products-cards {
+    margin-bottom: 14px;
+  }
 }
 
 /* Mobile */
@@ -1860,6 +1866,66 @@ details[open] summary svg {
   }
   .big-conteiner {
     max-width: 767px;
+  }
+  .filter {
+    font-size: 0px;
+  }
+  summary {
+    width: 37.5px;
+    height: 25px;
+    position: absolute;
+    z-index: 1;
+  }
+  .ikon-filter {
+    width: 37.5px;
+    height: 25px;
+  }
+  .product-filtration {
+    padding-top: 24px;
+  }
+  .products-cards {
+    margin-top: 32px;
+  }
+  .sort-filter {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .sort {
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+  }
+  .header-humen-link {
+    display: none;
+  }
+  .header-cart-link {
+    display: none;
+  }
+  .header-strips-link {
+    margin-right: 0px;
+  }
+  .adv-ikon-car {
+    width: 45px;
+  }
+  .adv-ikon-sales {
+    width: 40px;
+  }
+  .adv-ikon-quality {
+    width: 47px;
+  }
+  .card-none {
+    display: none;
+  }
+  .wrap-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 32px;
+  }
+  .categories-assambly {
+    width: 343px;
+    height: 247px;
   }
 }
 /*# sourceMappingURL=style.css.map */
