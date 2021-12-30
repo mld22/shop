@@ -1094,6 +1094,7 @@ line-height: 19px;
     width: 42%;
 }
 
+
 }
 
 /* Mobile */
@@ -1134,6 +1135,18 @@ width: 100%;
 .products-cards {
 margin-top: 32px;
 }
+
+.slider-box {
+    border: none;
+    }
+    
+    .slider-price{
+    margin-bottom: 0;
+    padding-bottom: 33px;
+    padding-right: 60px;
+    padding-left: 60px;
+    border-bottom: 1px solid #EAEAEA;
+    }
 
 .sort-filter {
 font-size: 12px;
@@ -1189,7 +1202,14 @@ height: 247px;
 }
 
 
+.registration {
+    flex-direction: column;
+}
 
+.regform {
+    width: 100%;
+    margin-bottom: 40px;
+}
 .filter-drop {
 padding-top: 30px;
 }

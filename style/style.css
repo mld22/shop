@@ -1912,6 +1912,16 @@ details[open] summary svg {
   .products-cards {
     margin-top: 32px;
   }
+  .slider-box {
+    border: none;
+  }
+  .slider-price {
+    margin-bottom: 0;
+    padding-bottom: 33px;
+    padding-right: 60px;
+    padding-left: 60px;
+    border-bottom: 1px solid #EAEAEA;
+  }
   .sort-filter {
     font-size: 12px;
     line-height: 14px;
@@ -1960,6 +1970,16 @@ details[open] summary svg {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .registration {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .regform {
+    width: 100%;
+    margin-bottom: 40px;
   }
   .filter-drop {
     padding-top: 30px;
