@@ -1782,6 +1782,7 @@ details[open] summary svg {
 @media (max-width: 1302px) {
   .wrap {
     width: 735px;
+    border: 1px solid red;
   }
   .big-conteiner {
     max-width: 1302px;
@@ -1866,6 +1867,7 @@ details[open] summary svg {
 @media (max-width: 781px) {
   .wrap {
     width: 360px;
+    border: 1px solid red;
   }
   .big-conteiner {
     max-width: 375px;
@@ -1886,6 +1888,9 @@ details[open] summary svg {
   .product-filtration {
     padding-top: 24px;
   }
+  .card-product {
+    width: 100%;
+  }
   .products-cards {
     margin-top: 32px;
   }
@@ -1905,7 +1910,10 @@ details[open] summary svg {
     display: none;
   }
   .header-strips-link {
-    margin-right: 10px;
+    margin-right: 5px;
+  }
+  .header-drop-title {
+    width: 32px;
   }
   .adv-ikon-car {
     width: 45px;
@@ -1982,6 +1990,20 @@ details[open] summary svg {
   }
   .subscrine-col-2 {
     padding-top: 0;
+  }
+  .item-product {
+    width: 100%;
+    height: 100%;
+  }
+  .slider-box {
+    width: 100%;
+  }
+  .slider-text {
+    width: 95%;
+  }
+  .slider {
+    border: none;
+    margin-top: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
