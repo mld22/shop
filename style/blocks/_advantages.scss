@@ -6,7 +6,7 @@ padding-top: 105px;
 &-wrap {
 @include list-none();
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
 align-items: center;
 list-style-type: none;
 background-repeat: no-repeat;

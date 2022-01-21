@@ -1071,14 +1071,13 @@ display: none;
 margin-bottom: 14px;
 }
 .categories-link {
-    padding: 50px 50px;
-    }
-
+padding: 50px 50px;
+}
 
 .loyalty-heading{
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
+font-weight: 300;
+font-size: 16px;
+line-height: 19px;
 }
 .loyalty-description {
 font-weight: 300;
@@ -1087,16 +1086,21 @@ line-height: 19px;
 }
 
 .loyalty-list-item{
-    font-weight: 300;
+font-weight: 300;
 font-size: 16px;
 line-height: 19px;
 }
 
 .regform {
-    width: 42%;
+width: 42%;
 }
 
-
+.foto-surfer {
+background-image: url(../img/foto-surfer2.png);
+width: 100%;
+min-height: 616px;
+background-position: left top;
+}
 }
 
 /* Mobile */
@@ -1140,16 +1144,16 @@ margin-top: 32px;
 }
 
 .slider-box {
-    border: none;
-    }
-    
-    .slider-price{
-    margin-bottom: 0;
-    padding-bottom: 33px;
-    padding-right: 60px;
-    padding-left: 60px;
-    border-bottom: 1px solid #EAEAEA;
-    }
+border: none;
+}
+
+.slider-price{
+margin-bottom: 0;
+padding-bottom: 33px;
+padding-right: 60px;
+padding-left: 60px;
+border-bottom: 1px solid #EAEAEA;
+}
 
 .sort-filter {
 font-size: 12px;
@@ -1172,8 +1176,8 @@ display: none;
 margin-right: 5px;
 }
 .header-drop-title{
-    width: 32px;
-    }
+width: 32px;
+}
 
 .adv-ikon-car {
 width: 45px;
@@ -1201,17 +1205,16 @@ height: 247px;
 }
 
 .categories-wrap {
- justify-content: center;
+justify-content: center;
 }
 
-
 .registration {
-    flex-direction: column;
+flex-direction: column;
 }
 
 .regform {
-    width: 100%;
-    margin-bottom: 40px;
+width: 100%;
+margin-bottom: 40px;
 }
 .filter-drop {
 padding-top: 30px;
@@ -1226,13 +1229,13 @@ line-height: 22px;
 padding-top: 60px;
 }
 .subscrine-depiction{
-    font-size: 14px;
-    line-height: 21px;
+font-size: 14px;
+line-height: 21px;
 }
 
 .subscrine-heading {
-    font-size: 24px;
-    line-height: 153.2%;
+font-size: 24px;
+line-height: 153.2%;
 }
 
 .search-bar{
@@ -1244,10 +1247,10 @@ padding: 18px;
 }
 
 .subscrine{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100%;
 }
 
 .subscrine-reletive{
@@ -1267,8 +1270,8 @@ padding-top: 0;
 }
 
 .item-product {
-    width: 100%;
-    height: 100%;}
+width: 100%;
+height: 100%;}
 
 .slider-box {
 width: 100%;
@@ -1282,6 +1285,5 @@ width: 95%;
 border: none;
 margin-top: 0;
 }
-
 
 }
