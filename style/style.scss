@@ -487,7 +487,6 @@ display: flex;
 flex-direction: column;
 align-items: center;
 width: 360px;
-height: 581px;
 margin-bottom: 30px;
 @include transition();
 position: relative;
@@ -1285,6 +1284,22 @@ width: 95%;
 .slider{
 border: none;
 margin-top: 0;
+}
+
+.footer-wrap {
+display: flex;
+flex-flow: wrap;
+flex-direction: column;
+}
+
+.footer-col-1 {
+order: 1;
+margin: 0 0 10px 0;
+}
+
+.footer-col-2 {
+order: 0;
+margin: 43px 0 43px 0;
 }
 
 }
