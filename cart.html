@@ -224,7 +224,7 @@
                 />
                 <div class="cart-description">
                   <p class="description-header">
-                    MANGO PEOPLE
+                    MANGO&nbsp;PEOPLE
                     <br />
                     T-SHIRT
                   </p>
@@ -237,7 +237,7 @@
                     <p class="parametres-txt">Size: Xl</p>
                     <p class="parametres-txt">
                       Quantity:
-                      <input type="number" class="counter" />
+                      <input type="number" class="counter" min="1"/>
                     </p>
                   </div>
                 </div>
@@ -263,7 +263,7 @@
                 />
                 <div class="cart-description">
                   <p class="description-header">
-                    MANGO PEOPLE
+                    MANGO&nbsp;PEOPLE
                     <br />
                     T-SHIRT
                   </p>
@@ -276,7 +276,7 @@
                     <p class="parametres-txt">Size: Xl</p>
                     <p class="parametres-txt">
                       Quantity:
-                      <input type="number" class="counter" />
+                      <input type="number" class="counter" min="1"/>
                     </p>
                   </div>
                 </div>
@@ -308,45 +308,47 @@
               />
             </div>
           </div>
-          <form action="#" class="regform cart-regform">
-            <fieldset class="form-line">
-              <legend class="headding-input">SHIPPING ADRESS</legend>
-              <input
-                class="form-input"
-                placeholder="Bangladesh"
-                type="text"
-                required
-              />
-              <input
-                class="form-input"
-                placeholder="State"
-                type="text"
-                required
-              />
-              <input
-                class="form-input"
-                placeholder="Postcode / Zip"
-                type="text"
-                required
-              />
-            </fieldset>
-
-            <fieldset class="form-line">
-              <input class="button-get" type="button" value="GET A QUOTE" />
-            </fieldset>
-            
-            <fieldset class="form-line cart-block-confirm">
-              <p class="cart-sub-price">
-                SUB TOTAL $900
-              </p>
-              <p class="cart-total-price">
-                GRAND TOTAL  <span class="parametres-price">$900</span>
-              </p>
-              <fieldset class="form-line block-line">
-                <input class="button-proceed" type="button" value="PROCEED TO CHECKOUT" />
-              </fieldset>
-            </fieldset>
-          </form>
+          <div class="cart-col-2">
+            <form action="#" class="cart-regform">
+                <fieldset class="form-line">
+                  <legend class="headding-input">SHIPPING ADRESS</legend>
+                  <input
+                    class="form-input"
+                    placeholder="Bangladesh"
+                    type="text"
+                    required
+                  />
+                  <input
+                    class="form-input"
+                    placeholder="State"
+                    type="text"
+                    required
+                  />
+                  <input
+                    class="form-input"
+                    placeholder="Postcode / Zip"
+                    type="text"
+                    required
+                  />
+    
+                  <input class="button-get" type="button" value="GET A QUOTE" />
+                </fieldset>
+                
+             
+              </form>
+    
+              <div class="form-line cart-block-confirm">
+                <p class="cart-sub-price">
+                  SUB TOTAL $900
+                </p>
+                <p class="cart-total-price">
+                  GRAND TOTAL  <span class="parametres-price">$900</span>
+                </p>
+                
+                  <input class="button-proceed" type="button" value="PROCEED TO CHECKOUT" />
+                
+              </div>
+          </div>
         </section>
       </div>
       <section class="subscrine foto-surfer">
